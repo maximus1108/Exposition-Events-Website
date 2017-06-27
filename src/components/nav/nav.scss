@@ -1,0 +1,32 @@
+#nav {
+
+  background-color: black;
+  height: 60px;
+
+  .nav-button {
+    background: black;
+    height: 100%;
+    width: 100px;
+    color: #999;
+    font-size: 20px;
+    display: inline-block;
+    text-align: center;
+    padding-top: 20px;
+    box-sizing: border-box;
+    transition: height 0.5s, color 0.5s;
+
+    &:hover:not(.current) {
+      cursor: pointer;
+      height: 110%;
+      color: #fff;
+    }
+
+    &.current {
+      color: #fff;
+      border-top: 4px solid #fff;
+      padding-top: 16px;
+    }
+
+  }
+
+}
